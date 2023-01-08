@@ -1,0 +1,74 @@
+<!-- Sign up page of website-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sign up - Fresh Food </title>
+        <meta charset="utf-8"> 
+        <meta name="author" content="Jignesh Maheshvari">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <link rel="icon" type="image/x-icon" href="../images/icon.ico">
+        <link href="../css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Sign up page header-->
+        <div class="header">
+            <div class="header_logo">
+                <img src="../images/logo.webp" alt="Website logo"/>
+            </div>
+            <div class="header_nav">
+                <ul class="navigation">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="map.html">Location</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Sign up page banner-->
+        <div class="banner">
+            <img src="../images/banner2.jpg" alt="Home page banner image" />
+        </div>
+        <!-- Sign up page content-->
+        <div class="content">
+            <h1 style="text-align: center;">Sign up with us</h1>
+            
+            <form id="sign-up-form">
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname" placeholder="e.g. Jignesh" minlength="3" required>
+
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname" placeholder="e.g. Maheshvari" minlength="3" required>
+                
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="e.g. xyz@openpolitechnic.co.nz" minlength="10" required>
+                
+                <label for="address">Address:</label>
+                <select name="address1" id="address1">
+                    <option value="Home">Home</option>
+                    <option value="Business">Business</option>
+                </select>
+                <input type="text" id="address" name="address" placeholder="e.g. 12abc, xyz street, city pin code" minlength="15" required>
+
+                <label for="delivery">Delivery Intruction:</label>
+                <span class="radio"><input type="radio" id="fd" name="delivery" value="Front Door"> Front Door </span>
+                <span class="radio"><input type="radio" id="fg" name="delivery" value="Front Gate"> Front Gate </span>
+                <span class="radio"><input type="radio" id="rec" name="delivery" value="Reception"> Reception </span>
+                <span class="radio"><input type="radio" id="gd" name="delivery" value="Garage Door"> Garage Door </span>
+                <span class="radio"><input type="radio" id="bd" name="delivery" value="Back Door"> Back Door </span>
+                <span class="radio"><input type="radio" id="delivery" name="delivery" value="Other" checked="checked"> Other </span>
+
+                <input type="submit" class="button" value="Submit" id="submit">
+            </form> 
+        </div>
+        <!-- Sign up page footer-->
+        <div class="footer">
+            <ul class="navigation">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="map.html">Location</a></li>
+            </ul>
+        </div>
+
+        <script src="../js/script.js"></script>
+    </body>
+</html>
